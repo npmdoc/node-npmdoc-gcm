@@ -1,0 +1,311 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/h2soft/node-gcm#readme"
+
+    >gcm (v1.0.1)</a>
+</h1>
+<h4>An interface to Google Cloud Messaging for Android (GCM) on Node.js</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gcm">module gcm</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gcm.GCM">
+            function <span class="apidocSignatureSpan">gcm.</span>GCM
+            <span class="apidocSignatureSpan">(apiKey)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">gcm.</span>GCM.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gcm.GCM">module gcm.GCM</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gcm.GCM.GCM">
+            function <span class="apidocSignatureSpan">gcm.</span>GCM
+            <span class="apidocSignatureSpan">(apiKey)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gcm.GCM.super_">
+            function <span class="apidocSignatureSpan">gcm.GCM.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gcm.GCM.prototype">module gcm.GCM.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gcm.GCM.prototype.send">
+            function <span class="apidocSignatureSpan">gcm.GCM.prototype.</span>send
+            <span class="apidocSignatureSpan">(packet, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gcm" id="apidoc.module.gcm">module gcm</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gcm.GCM" id="apidoc.element.gcm.GCM">
+        function <span class="apidocSignatureSpan">gcm.</span>GCM
+        <span class="apidocSignatureSpan">(apiKey)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function GCM(apiKey) {
+    if (apiKey) {
+        this.apiKey = apiKey;
+    } else {
+        throw Error(&#x27;No apiKey is given.&#x27;);
+    }
+    this.gcmOptions = {
+        host: &#x27;android.googleapis.com&#x27;,
+        port: 443,
+        path: &#x27;/gcm/send&#x27;,
+        method: &#x27;POST&#x27;,
+        headers: {}
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gcm.GCM" id="apidoc.module.gcm.GCM">module gcm.GCM</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gcm.GCM.GCM" id="apidoc.element.gcm.GCM.GCM">
+        function <span class="apidocSignatureSpan">gcm.</span>GCM
+        <span class="apidocSignatureSpan">(apiKey)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function GCM(apiKey) {
+    if (apiKey) {
+        this.apiKey = apiKey;
+    } else {
+        throw Error(&#x27;No apiKey is given.&#x27;);
+    }
+    this.gcmOptions = {
+        host: &#x27;android.googleapis.com&#x27;,
+        port: 443,
+        path: &#x27;/gcm/send&#x27;,
+        method: &#x27;POST&#x27;,
+        headers: {}
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gcm.GCM.super_" id="apidoc.element.gcm.GCM.super_">
+        function <span class="apidocSignatureSpan">gcm.GCM.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gcm.GCM.prototype" id="apidoc.module.gcm.GCM.prototype">module gcm.GCM.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gcm.GCM.prototype.send" id="apidoc.element.gcm.GCM.prototype.send">
+        function <span class="apidocSignatureSpan">gcm.GCM.prototype.</span>send
+        <span class="apidocSignatureSpan">(packet, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (packet, cb) {
+    var self = this;
+    if (cb) this.once(&#x27;sent&#x27;, cb);
+
+    var operation = retry.operation();
+
+    operation.attempt(function(currentAttempt) {
+        var postData = querystring.stringify(packet);
+        var headers = {
+            &#x27;Host&#x27;: self.gcmOptions.host,
+            &#x27;Authorization&#x27;: &#x27;key=&#x27; + self.apiKey,
+            &#x27;Content-Type&#x27;: &#x27;application/x-www-form-urlencoded;charset=UTF-8&#x27;,
+            &#x27;Content-length&#x27;: postData.length
+        };
+        self.gcmOptions.headers = headers;
+        if (self.keepAlive)
+            headers.Connection = &#x27;keep-alive&#x27;;
+
+        var request = https.request(self.gcmOptions, function(res) {
+            var data = &#x27;&#x27;;
+
+            if (res.statusCode == 503) {
+                // If the server is temporary unavailable, the C2DM spec requires that we implement exponential backoff
+                // and respect any Retry-After header
+                if (res.headers[&#x27;retry-after&#x27;]) {
+                    var retrySeconds = res.headers[&#x27;retry-after&#x27;] * 1; // force number
+                    if (isNaN(retrySeconds)) {
+                        // The Retry-After header is a HTTP-date, try to parse it
+                        retrySeconds = new Date(res.headers[&#x27;retry-after&#x27;]).getTime() - new Date().getTime();
+                    }
+                    if (!isNaN(retrySeconds) &#x26;&#x26; retrySeconds &#x3e; 0) {
+                        operation._timeouts[&#x27;minTimeout&#x27;] = retrySeconds;
+                    }
+                }
+                if (!operation.retry(&#x27;TemporaryUnavailable&#x27;)) {
+                    self.emit(&#x27;sent&#x27;, operation.mainError(), null);
+                }
+                // Ignore all subsequent events for this request
+                return;
+            }
+
+            function respond() {
+                var error = null, id = null;
+
+                if (data.indexOf(&#x27;Error=&#x27;) === 0) {
+                    error = data.substring(6).trim();
+                }
+                else if (data.indexOf(&#x27;id=&#x27;) === 0) {
+                    id = data.substring(3).trim();
+                }
+                else {
+                    // No id nor error?
+                    error = &#x27;InvalidServerResponse&#x27;;
+                }
+
+                // Only retry if error is QuotaExceeded or DeviceQuotaExceeded
+                if (operation.retry([&#x27;QuotaExceeded&#x27;, &#x27;DeviceQuotaExceeded&#x27;, &#x27;InvalidServerResponse&#x27;].indexOf(error) &#x3e;= 0 ? error
+ : null)) {
+                    return;
+                }
+
+                // Success, return message id (without id=)
+                self.emit(&#x27;sent&#x27;, error, id);
+            }
+
+            res.on(&#x27;data&#x27;, function(chunk) {
+                data += chunk;
+            });
+            res.on(&#x27;end&#x27;, respond);
+            res.on(&#x27;close&#x27;, respond);
+        });
+        request.on(&#x27;error&#x27;, function(error) {
+            self.emit(&#x27;sent&#x27;, error, null);
+        });
+        request.end(postData);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var message = {
+    registration_id: &#x27;Device registration id&#x27;, // required
+    collapse_key: &#x27;Collapse key&#x27;,
+    &#x27;data.key1&#x27;: &#x27;value1&#x27;,
+    &#x27;data.key2&#x27;: &#x27;value2&#x27;
+};
+
+gcm.<span class="apidocCodeKeywordSpan">send</span>(message, function(err, messageId){
+    if (err) {
+        console.log(&#x22;Something has gone wrong!&#x22;);
+    } else {
+        console.log(&#x22;Sent with message ID: &#x22;, messageId);
+    }
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
